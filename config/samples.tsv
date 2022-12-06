@@ -1,10 +1,20 @@
-# This file specifies the samples in the dataset
-# 'Sample': the name of the sample
-# 'Lane': a list of names indicating the different sequencing lanes in a sample
-#    The input FASTQs will be concatenated in this order
-# 'Path': a path template for an input fastq
-#    This path is relative to `input_dir` in config.yaml
-#    {lane} is expanded by the names enumerated in the Lanes column
-#    {read} is expanded by the `read_names` in config.yaml
+# This file specifies the samples in the dataset		
+# 'Sample': the name of the sample		
+# 'Lane': a list of names indicating the different sequencing lanes in a sample		
+#    The input FASTQs will be concatenated in this order		
+# 'Path': a path template for an input fastq		
+#    This path is relative to `input_dir` in config.yaml		
+#    {lane} is expanded by the names enumerated in the Lanes column		
+#    {read} is expanded by the `read_names` in config.yaml		
 Sample	Lanes	Path
 1_C23M1	L001,L002,L003	1_C23M1/1_C23M1_S1_{lane}_{read}_001.fastq.gz
+2_C23M2	L001,L002,L003	2_C23M2/2_C23M2_S2_{lane}_{read}_001.fastq.gz
+3_C23T	L001,L002,L003	3_C23T/3_C23T_S3_{lane}_{read}_001.fastq.gz
+4_C24T	L001,L002,L003	4_C24T/4_C24T_S4_{lane}_{read}_001.fastq.gz
+5_C24N	L001,L002,L003	5_C24N/5_C24N_S5_{lane}_{read}_001.fastq.gz
+6_C21posT1	L001,L002,L003	6_C21posT1/6_C21posT1_S6_{lane}_{read}_001.fastq.gz
+F_10x	L007	F_10x/F_10x_S1_{lane}_{read}_001.fastq.gz
+F70-10x	L006	F70-10x/F70-10x_S1_{lane}_{read}_001.fastq.gz
+F71-10x	L006	F71-10x/F71-10x_S2_{lane}_{read}_001.fastq.gz
+N_10x	L007	N_10x/N_10x_S3_{lane}_{read}_001.fastq.gz
+T_10x	L007	T_10x/T_10x_S2_{lane}_{read}_001.fastq.gz
